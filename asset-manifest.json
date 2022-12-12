@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/modulasyon_teknikleri/static/css/main.e6c13ad2.css",
-    "main.js": "/modulasyon_teknikleri/static/js/main.ba8143ae.js",
+    "main.css": "/modulasyon_teknikleri/static/css/main.8e880629.css",
+    "main.js": "/modulasyon_teknikleri/static/js/main.7b6f42e9.js",
+    "static/media/gazi.png": "/modulasyon_teknikleri/static/media/gazi.1f2d223b9db0b55bf739.png",
     "index.html": "/modulasyon_teknikleri/index.html",
-    "main.e6c13ad2.css.map": "/modulasyon_teknikleri/static/css/main.e6c13ad2.css.map",
-    "main.ba8143ae.js.map": "/modulasyon_teknikleri/static/js/main.ba8143ae.js.map"
+    "main.8e880629.css.map": "/modulasyon_teknikleri/static/css/main.8e880629.css.map",
+    "main.7b6f42e9.js.map": "/modulasyon_teknikleri/static/js/main.7b6f42e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.ba8143ae.js"
+    "static/css/main.8e880629.css",
+    "static/js/main.7b6f42e9.js"
   ]
 }
