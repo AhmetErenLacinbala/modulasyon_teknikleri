@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/modulasyon_teknikleri/static/css/main.e6c13ad2.css",
+    "main.js": "/modulasyon_teknikleri/static/js/main.ba8143ae.js",
+    "index.html": "/modulasyon_teknikleri/index.html",
+    "main.e6c13ad2.css.map": "/modulasyon_teknikleri/static/css/main.e6c13ad2.css.map",
+    "main.ba8143ae.js.map": "/modulasyon_teknikleri/static/js/main.ba8143ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ba8143ae.js"
+  ]
+}
