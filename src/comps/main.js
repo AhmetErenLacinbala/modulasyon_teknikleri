@@ -20,6 +20,10 @@ import Comp12 from './comp12/comp12';
 import Comp13 from './comp13/comp13';
 import Comp14 from './comp14/comp14';
 import Comp15 from './comp15/comp15';
+import Comp16 from './comp16/comp16';
+import Comp17 from './comp17/comp17';
+import Comp18 from './comp18/comp18';
+import Comp19 from './comp19/comp19';
 
 export default function Main() {
     const [currentPage, setPage] = useState(0);
@@ -66,6 +70,26 @@ export default function Main() {
                 pwm: false,
             })
         }
+        else if (currentPage >= 13 && currentPage <=18) {
+            setMod({
+                sin: true,
+                am: false,
+                fm: false,
+                pm: false,
+                pam: true,
+                pwm: false,
+            })
+        }
+                else if (currentPage >= 19 && currentPage <=23) {
+            setMod({
+                sin: true,
+                am: false,
+                fm: false,
+                pm: false,
+                pam: false,
+                pwm: true,
+            })
+        }
     }, [currentPage])
     useEffect(() => {
         function handleKeyDown(event) {
@@ -96,7 +120,7 @@ export default function Main() {
                     <Comp2 />
                 </div>
             </div>
-            <div style={{ position: "relative", top: "500px", zIndex: "300" }} className={((currentPage >= 1) && (currentPage <= 2)) || (currentPage >= 5 && currentPage <= 9) || (currentPage >= 11) ? "opacity1" : "opacity0"}>
+            <div style={{ position: "relative", top: "500px", zIndex: "300" }} className={((currentPage >= 1) && (currentPage <= 2)) || (currentPage >= 5 && currentPage <= 9) || (currentPage >= 11 && currentPage <= 16)|| (currentPage>=18) ? "opacity1" : "opacity0"}>
 
                 <Modulation currentPage={currentPage} phaseShiftSpeed={phaseShiftSpeed} setPhaseShiftSpeed={setPhaseShiftSpeed} frequency={frequency} setFrequency={setFrequency} mFrequency={mFrequency} setmFrequency={setmFrequency} mod={mod} setMod={setMod} />
 
@@ -150,6 +174,23 @@ export default function Main() {
             </div>
                        <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 15 ? "opacity1" : "opacity0"} >
                 <Comp15 />
+
+            </div>
+             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 16 ? "opacity1" : "opacity0"} >
+                <Comp16 />
+
+            </div>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 17 ? "opacity1" : "opacity0"} >
+                <Comp17/>
+
+            </div>
+
+ <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 18 ? "opacity1" : "opacity0"} >
+                <Comp18/>
+
+            </div>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 19 ? "opacity1" : "opacity0"} >
+                <Comp19/>
 
             </div>
 

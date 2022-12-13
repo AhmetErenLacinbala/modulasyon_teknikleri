@@ -208,3 +208,11 @@ nav {
   justify-content: space-around;
   margin: auto;
 }
+
+.bigprocon {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px 100px 0px 100px;
+}
+
+.bigprocon>* {}
