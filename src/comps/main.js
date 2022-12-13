@@ -37,6 +37,7 @@ import Comp29 from './comp29/comp29';
 import Comp30 from './comp30/comp30';
 import Comp31 from './comp31/comp31';
 import Comp32 from './comp32/comp32';
+import Comp33 from './comp33/comp33';
 
 export default function Main() {
     const [currentPage, setPage] = useState(0);
@@ -87,7 +88,7 @@ export default function Main() {
                 ppm: false
             })
         }
-        else if (currentPage >= 13 && currentPage <=18) {
+        else if (currentPage >= 13 && currentPage <= 18) {
             setMod({
                 sin: true,
                 am: false,
@@ -98,7 +99,7 @@ export default function Main() {
                 ppm: false
             })
         }
-                else if (currentPage >= 19 && currentPage <=23) {
+        else if (currentPage >= 19 && currentPage <= 23) {
             setMod({
                 sin: true,
                 am: false,
@@ -139,7 +140,7 @@ export default function Main() {
                     <Comp2 />
                 </div>
             </div>
-            <div style={{ position: "relative", top: "500px", zIndex: "300" }} className={((currentPage >= 1) && (currentPage <= 2)) || (currentPage >= 5 && currentPage <= 9) || (currentPage >= 11 && currentPage <= 16)|| (currentPage>=18 && currentPage<=19) ||(currentPage>=21&&currentPage<=23) ? "opacity1" : "opacity0"}>
+            <div style={{ position: "relative", top: "500px", zIndex: "300" }} className={((currentPage >= 1) && (currentPage <= 2)) || (currentPage >= 5 && currentPage <= 9) || (currentPage >= 11 && currentPage <= 16) || (currentPage >= 18 && currentPage <= 19) || (currentPage >= 21 && currentPage <= 23) ? "opacity1" : "opacity0"}>
 
                 <Modulation currentPage={currentPage} phaseShiftSpeed={phaseShiftSpeed} setPhaseShiftSpeed={setPhaseShiftSpeed} frequency={frequency} setFrequency={setFrequency} mFrequency={mFrequency} setmFrequency={setmFrequency} mod={mod} setMod={setMod} />
 
@@ -183,83 +184,86 @@ export default function Main() {
                 <Comp12 />
 
             </div>
-                        <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 13 ? "opacity1" : "opacity0"} >
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 13 ? "opacity1" : "opacity0"} >
                 <Comp13 />
 
             </div>
-              <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 14 ? "opacity1" : "opacity0"} >
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 14 ? "opacity1" : "opacity0"} >
                 <Comp14 />
 
             </div>
-                       <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 15 ? "opacity1" : "opacity0"} >
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 15 ? "opacity1" : "opacity0"} >
                 <Comp15 />
 
             </div>
-             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 16 ? "opacity1" : "opacity0"} >
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 16 ? "opacity1" : "opacity0"} >
                 <Comp16 />
 
             </div>
             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 17 ? "opacity1" : "opacity0"} >
-                <Comp17/>
+                <Comp17 />
 
             </div>
 
- <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 18 ? "opacity1" : "opacity0"} >
-                <Comp18/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 18 ? "opacity1" : "opacity0"} >
+                <Comp18 />
 
             </div>
             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 19 ? "opacity1" : "opacity0"} >
-                <Comp19/>
+                <Comp19 />
 
             </div>
-                        <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 20 ? "opacity1" : "opacity0"} >
-                <Comp20/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 20 ? "opacity1" : "opacity0"} >
+                <Comp20 />
 
             </div>
-                   <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 21 ? "opacity1" : "opacity0"} >
-                <Comp21/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 21 ? "opacity1" : "opacity0"} >
+                <Comp21 />
 
             </div>
-              <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 22 ? "opacity1" : "opacity0"} >
-                <Comp22/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 22 ? "opacity1" : "opacity0"} >
+                <Comp22 />
 
             </div>
-             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 23 ? "opacity1" : "opacity0"} >
-                <Comp23/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 23 ? "opacity1" : "opacity0"} >
+                <Comp23 />
 
             </div>
- <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 24 ? "opacity1" : "opacity0"} >
-                <Comp24/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 24 ? "opacity1" : "opacity0"} >
+                <Comp24 />
 
             </div>
 
-<div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 25 ? "opacity1" : "opacity0"} >
-                <Comp25/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 25 ? "opacity1" : "opacity0"} >
+                <Comp25 />
 
             </div>
             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 26 ? "opacity1" : "opacity0"} >
-                <Comp26/>
+                <Comp26 />
 
             </div>
-              <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 27 ? "opacity1" : "opacity0"} >
-                <Comp27/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 27 ? "opacity1" : "opacity0"} >
+                <Comp27 />
 
             </div>
-             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 28 ? "opacity1" : "opacity0"} >
-                <Comp28/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 28 ? "opacity1" : "opacity0"} >
+                <Comp28 />
 
             </div>
-             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 29 ? "opacity1" : "opacity0"} >
-                <Comp29/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 29 ? "opacity1" : "opacity0"} >
+                <Comp29 />
             </div>
-             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 30 ? "opacity1" : "opacity0"} >
-                <Comp30/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 30 ? "opacity1" : "opacity0"} >
+                <Comp30 />
             </div>
-              <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 31 ? "opacity1" : "opacity0"} >
-                <Comp31/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 31 ? "opacity1" : "opacity0"} >
+                <Comp31 />
             </div>
-             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 32 ? "opacity1" : "opacity0"} >
-                <Comp32/>
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 32 ? "opacity1" : "opacity0"} >
+                <Comp32 />
+            </div>
+             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 33 ? "opacity1" : "opacity0"} >
+                <Comp33 />
             </div>
 
 
