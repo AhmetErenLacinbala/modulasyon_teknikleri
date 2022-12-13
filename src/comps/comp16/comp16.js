@@ -6,7 +6,7 @@ import BgText from "../bgText/bgText";
 
 
 
-export default function Comp15(props) {
+export default function Comp16(props) {
     return (
         <div className="comp">
             <div className="openSansFont fontW700 compContent3">
