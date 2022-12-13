@@ -24,6 +24,12 @@ import Comp16 from './comp16/comp16';
 import Comp17 from './comp17/comp17';
 import Comp18 from './comp18/comp18';
 import Comp19 from './comp19/comp19';
+import Comp20 from './comp20/comp20';
+import Comp21 from './comp21/comp21';
+import Comp22 from './comp22/comp22';
+import Comp23 from './comp23/comp23';
+import Comp24 from './comp24/comp24';
+import Comp25 from './comp25/comp25';
 
 export default function Main() {
     const [currentPage, setPage] = useState(0);
@@ -37,6 +43,7 @@ export default function Main() {
         pm: false,
         pam: false,
         pwm: false,
+        ppm: false
     })
 
     useEffect(() => {
@@ -48,6 +55,7 @@ export default function Main() {
                 pm: false,
                 pam: false,
                 pwm: false,
+                ppm: false
             })
         }
         else if (currentPage >= 9 && currentPage <= 11) {
@@ -58,6 +66,7 @@ export default function Main() {
                 pm: false,
                 pam: false,
                 pwm: false,
+                ppm: false
             })
         }
         else if (currentPage === 12) {
@@ -68,6 +77,7 @@ export default function Main() {
                 pm: true,
                 pam: false,
                 pwm: false,
+                ppm: false
             })
         }
         else if (currentPage >= 13 && currentPage <=18) {
@@ -78,6 +88,7 @@ export default function Main() {
                 pm: false,
                 pam: true,
                 pwm: false,
+                ppm: false
             })
         }
                 else if (currentPage >= 19 && currentPage <=23) {
@@ -88,6 +99,7 @@ export default function Main() {
                 pm: false,
                 pam: false,
                 pwm: true,
+                ppm: false
             })
         }
     }, [currentPage])
@@ -120,7 +132,7 @@ export default function Main() {
                     <Comp2 />
                 </div>
             </div>
-            <div style={{ position: "relative", top: "500px", zIndex: "300" }} className={((currentPage >= 1) && (currentPage <= 2)) || (currentPage >= 5 && currentPage <= 9) || (currentPage >= 11 && currentPage <= 16)|| (currentPage>=18) ? "opacity1" : "opacity0"}>
+            <div style={{ position: "relative", top: "500px", zIndex: "300" }} className={((currentPage >= 1) && (currentPage <= 2)) || (currentPage >= 5 && currentPage <= 9) || (currentPage >= 11 && currentPage <= 16)|| (currentPage>=18 && currentPage<=19) ||(currentPage>=21&&currentPage<=23) ? "opacity1" : "opacity0"}>
 
                 <Modulation currentPage={currentPage} phaseShiftSpeed={phaseShiftSpeed} setPhaseShiftSpeed={setPhaseShiftSpeed} frequency={frequency} setFrequency={setFrequency} mFrequency={mFrequency} setmFrequency={setmFrequency} mod={mod} setMod={setMod} />
 
@@ -193,6 +205,32 @@ export default function Main() {
                 <Comp19/>
 
             </div>
+                        <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 20 ? "opacity1" : "opacity0"} >
+                <Comp20/>
+
+            </div>
+                   <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 21 ? "opacity1" : "opacity0"} >
+                <Comp21/>
+
+            </div>
+              <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 22 ? "opacity1" : "opacity0"} >
+                <Comp22/>
+
+            </div>
+             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 23 ? "opacity1" : "opacity0"} >
+                <Comp23/>
+
+            </div>
+ <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 24 ? "opacity1" : "opacity0"} >
+                <Comp24/>
+
+            </div>
+
+<div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 25 ? "opacity1" : "opacity0"} >
+                <Comp25/>
+
+            </div>
+
 
 
         </div>

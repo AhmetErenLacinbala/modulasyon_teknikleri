@@ -28,7 +28,7 @@ function P5Main({ phaseShiftSpeed, frequency, mFrequency, mod }) {
     function PM(p5, angle, mFrequency) {
         return (p5.sin(angle * mFrequency + 9 * p5.sin(angle + p5.TWO_PI / 2)))
     }
-
+ 
 
 
     const setup = (p5, canvasParentRef) => {
@@ -107,8 +107,27 @@ function P5Main({ phaseShiftSpeed, frequency, mFrequency, mod }) {
                 let y;
                 if (1 + p5.sin(angle) > sawTooth / 15) y = height / 2; //p5.map(p5.sin(angle), -1, 1, -canvas.y / 2, canvas.y / 2);
                 else y = 0;
-                console.log(p5.sin(angle), sawTooth / 30);
+        
                 let x = p5.map(i, 0, total + 1, -width / 2, width / 2);
+                p5.vertex(x, y);
+            }
+        }
+        p5.endShape();
+         p5.beginShape(); //PPM
+        if (mod.ppm) {
+            let sawTooth = 0;
+            let flag = false;
+            let counter = 0;
+            for (let i = 0; i < total + 1; i++) {
+                let angle = p5.map(i + phaseShift, 0, total, 0, frequency * p5.TWO_PI);
+                let y = 0;
+                sawTooth++
+                if (sawTooth > 30) {
+                    sawTooth = 0;
+                    flag= !flag;
+                }
+                if (flag === true) y = height / 2;
+                let x = p5.map(i, 0, total + 1, -width / 2, width / 2)
                 p5.vertex(x, y);
             }
         }
@@ -187,6 +206,7 @@ export default function Modulation(props) {
                         />
                         PWM
                     </label>
+     
                 </div>
             </div>
         </div>
