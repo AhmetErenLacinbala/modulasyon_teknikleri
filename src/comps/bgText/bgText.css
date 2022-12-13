@@ -1,0 +1,10 @@
+.bgText {
+    position: absolute;
+    font-size: 150px;
+    z-index: -1;
+
+}
+
+.bgTextContent {
+    color: #0F0F0F;
+}

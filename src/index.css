@@ -1,13 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* color 1*/
+
 body {
+  background-color: black;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body * {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0
+}
+
+body *:focus {
+  outline: 0
+}
+
+ul {
+  list-style: none;
+}
+
+body * {
+  color: white;
+}
+
+nav {
+  display: flex;
+}
+
+/*font family preset*/
+.josefinFont {
+  font-family: "Josefin Sans";
+}
+
+.openSansFont {
+  font-family: "Open Sans";
+}
+
+.courierFont {
+  font-family: "Courier Prime";
+}
+
+
+/*font weight preset*/
+.fontW100 {
+  font-weight: 100;
+}
+
+.fontW300 {
+  font-weight: 300;
+}
+
+.fontW400 {
+  font-weight: 400;
+}
+
+.fontW700 {
+  font-weight: 700;
+}
+
+/*font size preset*/
+.fontS12 {
+  font-size: 12px;
+}
+
+.fontS16 {
+  font-size: 16px;
+}
+
+.fontS24 {
+  font-size: 24px;
+}
+
+.fontS32 {
+  font-size: 32px;
+}
+
+.fontS40 {
+  font-size: 40px;
+}
+
+.fontS48 {
+  font-size: 48px;
+}
+
+.fontS64 {
+  font-size: 64px;
+}
+
+.fontS72 {
+  font-size: 72px;
+}
+
+.center {
+  /*wrapper has to be relative*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.comp3BlocksMovingText {
+  width: 380px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.filterBlur {
+  transition: all .3s ease-in-out;
+  filter: blur(30px);
+  opacity: 0.7;
+}
+
+.opacity1 {
+  transition: all 1.5s ease-in-out;
+  opacity: 1;
+}
+
+.opacity0 {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+
+
+
+.comp {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #0B0B0B;
+  display: flex;
+  justify-self: center;
+  z-index: -2;
+}
+
+.compFullSize {
+  height: 100vw;
+  width: 100vw;
+}
+
+.compContent>p {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.modulationSliders {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.modulationSliders * {
+  margin-bottom: 20px;
+}
+
+.modulationCheckBoxes {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.modulationCheckBoxes * {
+  margin-bottom: 10px;
+}
+
+.halfComps>* {
+  position: absolute;
 }
