@@ -4,27 +4,21 @@ import '../../index.css';
 import "./../main.css";
 
 
-export default function Comp25(props) {
+export default function Comp26(props) {
     return (
         <div style={{display:"flex"}}>
         
         <div style={{flexDirection:"column", backgroundColor:"rgba(11,11,11,0.5)"}} className="comp compFullSize">
-            <p style={{marginTop:"50px", marginLeft:"50px", marginRight:"50px", marginBottom:"10px"}} className="openSansFont fontW700 fontS72">Darbe Konum Modülasyonu (PPM)</p>
-            <p style={{marginLeft:"50px"}} className=' fontS40 fontW300 openSansFont'>Örneklenen modüle edici sinyalin genliğine göre darbelerin konumunun değiştirilmesine izin
-veren bir modülasyon tekniğidir. <br/>
-Darbelerin genliğinin ve genişliğinin sabit tutulduğu ve yalnızca darbelerin konumunun 
-değiştiği başka bir PTM türüdür. <br/>
-Basitçe söylemek gerekirse, darbe yer değiştirmesi, mesaj sinyalinin örneklenen değeriyle
-doğru orantılıdır.</p>
-            <div className="openSansFont fontW300 compContent">
+            <p style={{marginTop:"50px", marginLeft:"50px", marginRight:"50px", marginBottom:"10px"}} className="openSansFont fontW700 fontS64">PPM Sinyali Üretimi İçin Blok Diyagramı</p>
+            <div className="openSansFont fontW300 compContent2">
 
-                <p className=' fontS32'>● Bilgi, darbe konum modülasyonunda darbelerin değişen konumu ile iletilir.</p>
-                <p className=' fontS32'>● Bir PPM dalga formu oluşurken mesaj sinyalinin genliği arttıkça darbe referansa göre
-kayar.</p>
-                <p className=' fontS32'>● PWM’de darbelerin değişken genişliği nedeniyle iletim gücü de buna göre değişir.
-PPM'de durum böyle değildir, çünkü burada darbelerin genişliği sabit kalır ve yalnızca
-konumları değişir. Bu nedenle, iletim gücünde değişiklik gözlenmez.</p>
+                <p className=' fontS40'>● Burada, önce bir PWM sinyali üretmek için karşılaştırıcıda bir PAM sinyalinin üretildiği ve daha sonra
+işlendiği ayrıntılı bir blok diyagram gösterilmektedir.</p>
+                <p className=' fontS40'>● Karşılaştırıcının çıktısı, monostable bir multivibratör’e beslenir. Negatif kenar tetiklenir. PWM sinyalinin
+arka kenarı ile monostable’ın çıkışı yükselir.</p>
+                <p className=' fontS40'>● PWM sinyalinin arka kenarı ile bir PPM sinyali darbesi oluşur.</p>
             </div>
+            <img style={{marginTop:"30px", borderRadius:"10px", width:"45%", marginLeft:"auto", marginRight:"auto"}} src="https://raw.githubusercontent.com/AhmetErenLacinbala/modulasyon_teknikleri/master/src/comps/comp26/ppm.jpg" alt="" />
         </div>
         </div>
     );
