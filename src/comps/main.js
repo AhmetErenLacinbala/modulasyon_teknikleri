@@ -38,6 +38,9 @@ import Comp30 from './comp30/comp30';
 import Comp31 from './comp31/comp31';
 import Comp32 from './comp32/comp32';
 import Comp33 from './comp33/comp33';
+import Comp34 from './comp34/comp34';
+import Comp35 from './comp35/comp35';
+import Comp36 from './comp36/comp36';
 
 export default function Main() {
     const [currentPage, setPage] = useState(0);
@@ -112,9 +115,13 @@ export default function Main() {
         }
     }, [currentPage])
     useEffect(() => {
-        function handleKeyDown(event) {
-            if (event.key === "ArrowRight") setPage(currentPage + 1);
-            else if ((event.key === "ArrowLeft") && (currentPage !== 0)) setPage(currentPage - 1)
+          function handleKeyDown(event) {
+            
+
+                
+                if (event.key === "ArrowRight" && currentPage<37) setPage(currentPage + 1);
+                else if ((event.key === "ArrowLeft" && currentPage>0) && (currentPage !== 0)) setPage(currentPage - 1)
+            
         };
         console.log(currentPage);
         document.addEventListener("keydown", handleKeyDown);
@@ -123,7 +130,7 @@ export default function Main() {
         };
     }); //setTimeout(()=>{return "displayNone"},1500)
     return (
-        <div>
+        <div onClick={e => console.log(e.pageX, e.pageY)}>
             <div className={currentPage === 0 ? "opacity1" : "filterBlur"} style={{ position: "fixed", zIndex: "-5", }}>
                 <Bg />
             </div>
@@ -266,6 +273,15 @@ export default function Main() {
                 <Comp33 />
             </div>
 
+            <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 34 ? "opacity1" : "opacity0"} >
+                <Comp34 />
+            </div>
+              <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 35 ? "opacity1" : "opacity0"} >
+                <Comp35 />
+            </div>
+                <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 36 ? "opacity1" : "opacity0"} >
+                <Comp36 />
+            </div>
 
 
 
