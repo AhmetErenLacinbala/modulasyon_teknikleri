@@ -216,3 +216,7 @@ nav {
 }
 
 .bigprocon>* {}
+
+.ppmApp>p {
+  margin-bottom: 60px;
+}

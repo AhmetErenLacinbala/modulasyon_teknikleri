@@ -32,6 +32,9 @@ import Comp24 from './comp24/comp24';
 import Comp25 from './comp25/comp25';
 import Comp26 from './comp26/comp26';
 import Comp27 from './comp27/comp27';
+import Comp28 from './comp28/comp28';
+import Comp29 from './comp29/comp29';
+import Comp30 from './comp30/comp30';
 
 export default function Main() {
     const [currentPage, setPage] = useState(0);
@@ -239,6 +242,16 @@ export default function Main() {
               <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 27 ? "opacity1" : "opacity0"} >
                 <Comp27/>
 
+            </div>
+             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 28 ? "opacity1" : "opacity0"} >
+                <Comp28/>
+
+            </div>
+             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 29 ? "opacity1" : "opacity0"} >
+                <Comp29/>
+            </div>
+             <div style={{ position: "absolute", top: "0", zIndex: "7" }} className={currentPage === 30 ? "opacity1" : "opacity0"} >
+                <Comp30/>
             </div>
 
 
