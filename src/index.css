@@ -155,26 +155,56 @@ nav {
   margin-top: 50px;
 }
 
+.compContent1>p {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.compContent2>p {
+  margin-left: 50px;
+  margin-top: 27px;
+}
+
+.compContent3>p {
+  margin-left: 50px;
+  margin-top: 22px;
+}
+
 .modulationSliders {
   display: flex;
   flex-direction: column;
-
+  position: fixed;
+  right: 30px;
+  bottom: 170px;
 }
 
 .modulationSliders * {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modulationCheckBoxes {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  right: 130px;
+  bottom: 0px;
 
 }
 
 .modulationCheckBoxes * {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .halfComps>* {
   position: absolute;
+}
+
+.proscons>* {
+  width: 40%;
+}
+
+.proscons {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
 }
