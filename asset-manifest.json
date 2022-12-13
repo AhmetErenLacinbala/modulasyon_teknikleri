@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/modulasyon_teknikleri/static/css/main.8e880629.css",
-    "main.js": "/modulasyon_teknikleri/static/js/main.7b6f42e9.js",
+    "main.css": "/modulasyon_teknikleri/static/css/main.66fb5a12.css",
+    "main.js": "/modulasyon_teknikleri/static/js/main.60e3da2d.js",
+    "static/media/modulasyon.gif": "/modulasyon_teknikleri/static/media/modulasyon.1d0e39c170ee5197d7d5.gif",
     "static/media/gazi.png": "/modulasyon_teknikleri/static/media/gazi.1f2d223b9db0b55bf739.png",
+    "static/media/comp4.png": "/modulasyon_teknikleri/static/media/comp4.94f8b499a1c8fe292e37.png",
     "index.html": "/modulasyon_teknikleri/index.html",
-    "main.8e880629.css.map": "/modulasyon_teknikleri/static/css/main.8e880629.css.map",
-    "main.7b6f42e9.js.map": "/modulasyon_teknikleri/static/js/main.7b6f42e9.js.map"
+    "main.66fb5a12.css.map": "/modulasyon_teknikleri/static/css/main.66fb5a12.css.map",
+    "main.60e3da2d.js.map": "/modulasyon_teknikleri/static/js/main.60e3da2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e880629.css",
-    "static/js/main.7b6f42e9.js"
+    "static/css/main.66fb5a12.css",
+    "static/js/main.60e3da2d.js"
   ]
 }
